@@ -1,0 +1,53 @@
+/* ==== 
+ --------- (5) cta section styles start ---------
+ ==== */
+
+.cta {
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #1e263abf;
+        z-index: -1;
+    }
+
+    .cta__thumb {
+        img {
+            position: absolute;
+            bottom: 0px;
+            max-height: 570px;
+            height: 570px;
+        }
+    }
+
+    .cta__content {
+
+        h5 {
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: $white;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.cta--alt {
+    margin-top: 90px;
+}
+
+/* ==== 
+ --------- (5) cta section styles end ---------
+ ==== */

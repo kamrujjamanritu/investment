@@ -1,0 +1,51 @@
+/* ==== 
+ --------- (4.2) hero section styles start ---------
+ ==== */
+
+.hero {
+    padding: 300px 0px 300px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+         background-color: #1e263a7a;
+        z-index: -1;
+    }
+
+    .hero__content {
+        h1 {
+            margin-bottom: 30px;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: $white;
+        }
+
+        .hero__cta {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            .cmn-button {
+                min-width: 200px;
+                justify-content: center;
+            }
+
+            .cmn-button--secondary {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+/* ==== 
+ --------- (4.2) hero section styles end ---------
+ ==== */

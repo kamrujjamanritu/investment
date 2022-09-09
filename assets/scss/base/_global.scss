@@ -1,0 +1,231 @@
+/* ==== 
+ --------- (2.3) global styles start ---------
+ ==== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0px;
+  outline: 0px;
+}
+
+.unset {
+  max-width: unset;
+}
+
+.bg-img {
+  @include background($theme-color, no-repeat, cover, center center);
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.slick-slide {
+  margin: 0px 12px;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.slick-list {
+  margin: 0px -12px;
+}
+
+.section {
+  padding: 120px 0px;
+
+  .section__row {
+    margin-bottom: -30px;
+
+    .section__col {
+      margin-bottom: 30px;
+    }
+  }
+
+  .section__cta {
+    margin-top: 60px;
+
+    .cmn-button {
+      min-width: 200px;
+      justify-content: center;
+    }
+  }
+}
+
+.section--space-top {
+  padding-top: 120px;
+}
+
+.section--space-bottom {
+  padding-bottom: 120px;
+}
+
+// section header
+.section__header {
+  text-align: center;
+  margin-bottom: 58px;
+
+  h5 {
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    color: $quinary-color;
+  }
+
+  p {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// breadcrumb
+.breadcrumb {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+
+  .breadcrumb-item {
+    margin-top: 0px;
+    color: $theme-color;
+    padding-left: 0px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: 400;
+      color: $white;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &::before {
+      float: none;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f178";
+      font-size: 20px;
+      color: $white;
+    }
+
+    &:first-of-type {
+      padding-left: 0px;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    &:last-of-type {
+      padding-right: 0px;
+
+    }
+  }
+
+  .active {
+    color: $white;
+  }
+}
+
+// social
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border: 1px solid #ffffff20;
+    border-radius: 50%;
+    transition: $transition;
+
+    i {
+      font-size: 16px;
+      color: $primary-color;
+    }
+
+    &:hover {
+      background-color: $white;
+
+      i {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+// pagination
+.pagination {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  li {
+    margin: 0px;
+  }
+
+  .page-link {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    border: 0px;
+    box-shadow: 0px 4px 24px 0px #13216e52;
+    color: $quinary-color;
+    transition: $transition;
+    padding: 0px;
+
+    i {
+      transition: $transition;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+
+  .page-item {
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+
+  .active {
+    background-color: $secondary-color;
+    color: $white;
+  }
+}
+
+.bg-tertiary {
+  background-color: $tertiary-color;
+}
+
+
+/* ==== 
+ --------- (2.3) global styles end ---------
+ ==== */

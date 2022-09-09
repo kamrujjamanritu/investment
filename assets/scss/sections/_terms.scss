@@ -1,0 +1,45 @@
+ /* ==== 
+ --------- (5) terms section styles start ---------
+ ==== */
+
+ .terms {
+     .terms__content {
+         padding: 60px;
+         background-color: $white;
+         box-shadow: $shadow;
+         border-radius: 10px;
+     }
+
+     .terms__content-single {
+         padding: 40px 30px;
+         background-color: $tertiary-color;
+         border-radius: 10px;
+         box-shadow: $shadow;
+         margin-bottom: 40px;
+         &:nth-last-of-type(1) {
+             margin-bottom: 0px;
+         }
+         h5 {
+             margin-bottom: 25px;
+             color: $quinary-color;
+             font-weight: 700;
+             text-transform: capitalize;
+         }
+
+         ul {
+             margin-top: 40px;
+         }
+
+         p,
+         li {
+             margin-bottom: 25px;
+             &:nth-last-of-type(1) {
+                 margin-bottom: 0px;
+             }
+         }
+     }
+ }
+
+  /* ==== 
+ --------- (5) terms section styles end ---------
+ ==== */

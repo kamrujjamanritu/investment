@@ -1,0 +1,29 @@
+// (1.2) variables
+
+// roboto google font source
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+// font family
+$roboto: 'Roboto', sans-serif;
+
+// theme default
+$theme-font: $roboto;
+$theme-bg: #ffffff;
+$theme-color: #333333;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$primary-color: #09a223;
+$secondary-color: #3190E7;
+$tertiary-color: #ebfefe;
+$quaternary-color: #333333;
+$quinary-color: #121212;
+
+
+// transitions
+$transition: all 0.2s ease-out;
+
+// box shadow
+$shadow: 0px 8px 53px rgba(184, 178, 206, 0.36);
+$secondary-shadow: 0px 8px 9px rgba(238, 233, 255, 0.61);

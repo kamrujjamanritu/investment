@@ -1,0 +1,73 @@
+/* ==== 
+ --------- (4.3) banner styles start ---------
+ ==== */
+
+.banner {
+    padding-top: 250px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #1e263abf;
+        z-index: -1;
+    }
+
+    .banner__content {
+        h2 {
+            color: $white
+        }
+    }
+}
+
+.contact--banner {
+    padding-bottom: 320px;
+    .banner__content {
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            color: $white;
+        }
+    }
+}
+
+// affiliate banner
+.affiliate-banner {
+    background-position: top 0px center;
+}
+
+.affiliate-banner__content {
+    h4 {
+        color: $primary-color;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        color: $white;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: $white;
+        margin-bottom: 38px;
+    }
+}
+
+.affiliate-step {
+    h3 {
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+}
+
+/* ==== 
+ --------- (4.3) banner styles end ---------
+ ==== */

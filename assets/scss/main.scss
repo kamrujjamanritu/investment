@@ -1,0 +1,83 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: 
+ * version: 1.0
+ * description: 
+ * author: 
+ * author url: 
+
+ 01. abstracts
+     1.1 --> mixins
+     1.2 --> variables
+    
+ 02. base
+     2.1 --> reset
+     2.2 --> typography
+     2.3 --> global
+
+ 03. components
+     3.1 --> buttons
+     3.2 --> forms
+     3.3 --> preloader
+
+ 04. layout
+     4.1 --> header
+     4.2 --> hero Section
+     4.3 --> banner
+     4.4 --> footer
+
+ 05. sections
+     5.1 --> 
+     5.2 --> 
+     5.3 --> 
+     5.4 --> 
+     5.5 --> 
+     5.6 --> 
+
+ 06. responsive
+
+     =================================
+============== */
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/preloader";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/hero-section";
+@import "./layout/banner";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/counter";
+@import "./sections/invest";
+@import "./sections/pitch";
+@import "./sections/service";
+@import "./sections/about";
+@import "./sections/cta";
+@import "./sections/testimonials";
+@import "./sections/blog";
+@import "./sections/investor";
+@import "./sections/entrepreneur";
+@import "./sections/affiliate";
+@import "./sections/works";
+@import "./sections/contact";
+@import "./sections/faq";
+@import "./sections/refunds";
+@import "./sections/terms";
+@import "./sections/case";
+
+// responsive styles
+@import "./responsive";

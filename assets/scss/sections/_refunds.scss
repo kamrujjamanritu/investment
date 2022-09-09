@@ -1,0 +1,66 @@
+ /* ==== 
+ --------- (5) refunds section styles start ---------
+ ==== */
+
+ .refunds {
+     background-color: $white;
+
+     .refunds__content {
+         h2 {
+             margin-bottom: 30px;
+             color: $secondary-color;
+             position: relative;
+             &::after {
+                 content: '';
+                 position: absolute;
+                 top: 100%;
+                 left: 0px;
+                 width: 130px;
+                 height: 4px;
+                 background-color: $secondary-color;
+                 border-radius: 5px;
+             }
+         }
+     }
+
+     .refunds__content-group {
+         p,
+         li {
+             margin-bottom: 15px;
+             &:nth-last-of-type(1) {
+                 margin-bottom: 0px;
+             }
+         }
+
+         h5 {
+             margin-bottom: 20px;
+             color: $quinary-color;
+         }
+
+         li {
+             padding-left: 20px;
+             position: relative;
+             font-weight: 500;
+             &::before {
+                 content: '';
+                 position: absolute;
+                 top: 50%;
+                 left: 0px;
+                 transform: translateY(-50%);
+                 width: 10px;
+                 height: 10px;
+                 background-color: $secondary-color;
+                border-radius: 50%;
+             }
+         }
+     }
+
+     hr {
+         margin: 40px 0px;
+         border-color: $primary-color;
+     }
+ }
+
+ /* ==== 
+ --------- (5) refunds section styles end ---------
+ ==== */

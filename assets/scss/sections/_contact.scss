@@ -1,0 +1,106 @@
+/* ==== 
+ --------- (5) contact section styles start ---------
+ ==== */
+
+.contact {
+    padding-top: 0px !important;
+    margin-top: -200px;
+    position: relative;
+    z-index: 2;
+
+    .contact__single {
+        padding: 40px 30px;
+        background-color: $white;
+        box-shadow: $shadow;
+        border-radius: 10px;
+    }
+
+    .contact__single-thumb {
+        @include box(80px);
+        background-color: $primary-color;
+        margin: 0px auto 30px;
+
+        i {
+            font-size: 30px;
+            color: $white;
+        }
+    }
+
+    h3 {
+        color: $quinary-color;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        margin: 30px auto;
+        width: 50%;
+    }
+
+    a {
+        color: $primary-color;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    .contact__form {
+        padding: 60px 40px;
+        background-color: $white;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        margin-top: 120px;
+    }
+
+    .contact__form-intro {
+        h2 {
+            color: $quinary-color;
+            margin-bottom: 15px;
+        }
+        margin-bottom: 40px;
+    }
+
+    .contact__input {
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: left;
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 16px 16px;
+            border: 1px solid #cae9e9;
+            border-radius: 5px;
+
+            &::placeholder {
+                color: #aac9c9;
+                font-weight: 400;
+            }
+
+            &:focus {
+                border-color: $secondary-color;
+            }
+        }
+    }
+
+    .cmn-button {
+        width: 100%;
+        justify-content: center;
+        background-color: $secondary-color;
+        margin-top: 30px;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+
+/* ==== 
+ --------- (5) contact section styles end ---------
+ ==== */

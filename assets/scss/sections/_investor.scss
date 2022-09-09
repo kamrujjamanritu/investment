@@ -1,0 +1,39 @@
+/* ==== 
+ --------- (5) investor section styles start ---------
+ ==== */
+
+ .investor {
+     .investor__single {
+         text-align: center;
+         padding: 40px 20px;
+         background-color: $white;
+         box-shadow: $shadow;
+         border-radius: 10px;
+     }
+
+     .investor__single-thumb {
+         width: 90px;
+         height: 90px;
+         border-radius: 50%;
+         background-color: $primary-color;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 30px;
+         i {
+             font-size: 30px;
+             color: $white;
+         }
+     }
+
+     .investor__single-content {
+         h4 {
+             color: $secondary-color;
+             margin-bottom: 25px;
+         }
+     }
+ }
+
+ /* ==== 
+ --------- (5) investor section styles end ---------
+ ==== */

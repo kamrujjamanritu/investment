@@ -1,0 +1,137 @@
+/* ==== 
+ --------- (5) invest section styles start ---------
+ ==== */
+
+.invest {
+    .invest__single {
+        background-color: $white;
+        box-shadow: $shadow;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .invest__single-thumb {
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            height: 250px;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+
+    .invest__single-content {
+        padding: 30px 20px 30px;
+
+        h4 {
+            margin-bottom: 15px;
+
+            a {
+                color: $secondary-color;
+            }
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+    }
+
+    .project-collection {
+        margin: 60px 0px 30px;
+
+        .total-amount {
+            width: 100%;
+            height: 10px;
+            background-color: #09a2234a;
+            position: relative;
+            border-radius: 5px;
+        }
+
+        .collected-amount {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            height: inherit;
+            background-color: $primary-color;
+            border-radius: 5px;
+        }
+
+        .amount-tooltip {
+            position: absolute;
+            bottom: calc(100% + 16px);
+            padding: 8px 10px;
+            background-color: $primary-color;
+            border-radius: 5px;
+            transform: translateX(-100%);
+
+            span {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1;
+                color: $white;
+            }
+
+            &::after {
+                content: '';
+                border: 6px solid transparent;
+                border-top-color: $primary-color;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+            }
+        }
+
+         p {
+             margin-top: 10px;
+             font-weight: 500;
+         }
+    }
+
+    .invest__single-content-description {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin: 30px 0px;
+        border-color: $secondary-color;
+    }
+
+    .invest__single-amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        p {
+            margin-bottom: 6px;
+        }
+
+    }
+
+    .invest__single-footer {
+        margin-top: 40px;
+
+        .cmn-button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+.invest--alt {
+    padding-bottom: 220px;
+}
+
+/* ==== 
+ --------- (5) invest section styles end ---------
+ ==== */

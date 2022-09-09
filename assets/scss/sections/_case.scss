@@ -1,0 +1,125 @@
+/* ==== 
+ --------- (5) case studies section styles start ---------
+ ==== */
+
+.case {
+
+    .case__filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 20px;
+        margin-bottom: 60px;
+
+        .case__filter-btn {
+            background-color: transparent;
+            font-weight: 500;
+            color: $secondary-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        .case__filter-btn-active {
+            color: $primary-color;
+        }
+    }
+
+    .case__single {
+        background-color: $white;
+        box-shadow: $shadow;
+        border-radius: 5px;
+
+        &:hover {
+            .case__single-poster {
+                img {
+                    transform: scale(1.2) rotate(5deg);
+                }
+            }
+
+            .case__single-content {
+                h4 {
+                    a {
+                        color: $primary-color;
+                    }
+                }
+
+                .case__single-content-cta {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .case__single-poster {
+        border-radius: 5px 5px 0px 0px;
+        overflow: hidden;
+
+        a {
+            display: block;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 300px;
+            border-radius: 5px 5px 0px 0px;
+            transition: $transition;
+        }
+    }
+
+    .case__single-content {
+        padding: 30px;
+
+        h5 {
+            color: $primary-color;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+
+            a {
+                color: $secondary-color;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .case__single-content-cta {
+            margin-top: 25px;
+            color: $secondary-color;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+.outlet {
+    animation: case 0.6s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+}
+
+@keyframes case {
+    0% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ==== 
+ --------- (5) case studies section styles end ---------
+ ==== */
