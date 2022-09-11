@@ -68,6 +68,47 @@
             delay: 10,
             time: 1000,
         });
+
+        // category select
+        $(".category-select").niceSelect();
+
+        // location select
+        $(".location-select").niceSelect();
+
+        // invest details project gallery
+        $(".big-slide").not(".slick-initialized").slick({
+            infinite: true,
+            autoplay: true,
+            focusOnSelect: true,
+            speed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            asNavFor: ".small-slide",
+        });
+
+        $(".small-slide")
+            .not(".slick-initialized")
+            .slick({
+                infinite: true,
+                autoplay: true,
+                focusOnSelect: true,
+                speed: 3000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                asNavFor: ".big-slide",
+                responsive: [
+                    {
+                        breakpoint: 425,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                    },
+                ],
+            });
     });
 
 })(jQuery);

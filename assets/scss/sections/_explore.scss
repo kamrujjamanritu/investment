@@ -1,0 +1,28 @@
+/* ==== 
+ --------- (5) explore section styles start ---------
+ ==== */
+
+.explore {
+    .explore__tab-btns {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .explore__tab-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .explore__tab-btn--active {
+        background-color: $secondary-color;
+    }
+    .explore__tab {
+        margin-top: 60px;
+    }
+}
+
+ /* ==== 
+ --------- (5) explore section styles end ---------
+ ==== */
